@@ -40,13 +40,13 @@ function respond() {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://www.daddyleagues.com/LOA/players?name="+rep+"&position=all&team=all");
+    postMessage("http://www.daddyleagues.com/MLYP/players?name="+rep+"&position=all&team=all");
     
     this.res.end();
   }  
     else if(request.text && botRegexSDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/LOA/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/MLYP/team/"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexTw.test(request.text)) {

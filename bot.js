@@ -66,7 +66,7 @@ function respond() {
   } 
   else if(request.text && botRegexRLS.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/1vE8quIVtVa7X9CKG4IvxpPuMLTEDr5jo88jJobBQrSs/edit?usp=sharing");
+    postMessage("https://docs.google.com/document/d/1ARkXrAjNFa64GOhZpMF29YeEeZt9yrCC2RL_iofVaXc");
     this.res.end();
   }
   else {
